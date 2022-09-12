@@ -1,6 +1,5 @@
 package com.api.parkingcontrol.models;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -37,5 +36,4 @@ public class ParkingSpotModel implements Serializable {
     private String apartment;
     @Column(nullable = false, length = 30)
     private String block;
-
 }
