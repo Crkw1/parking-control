@@ -1,4 +1,4 @@
-package com.api.parkingcontrol.Dtos;
+package com.api.parkingcontrol.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
