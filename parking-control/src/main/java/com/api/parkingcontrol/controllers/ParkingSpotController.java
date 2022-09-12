@@ -1,7 +1,6 @@
 package com.api.parkingcontrol.controllers;
 
-
-import com.api.parkingcontrol.Dtos.ParkingSpotDto;
+import com.api.parkingcontrol.dtos.ParkingSpotDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 import com.api.parkingcontrol.services.ParkingSpotService;
 import org.springframework.beans.BeanUtils;
@@ -29,7 +28,6 @@ public class ParkingSpotController {
     public ParkingSpotController(ParkingSpotService parkingSpotService) {
         this.parkingSpotService = parkingSpotService;
     }
-
     @PostMapping
     public ResponseEntity<Object> saveParkingSpot(@RequestBody @Valid ParkingSpotDto parkingSpotDto){
         if(parkingSpotService.existsByLicensePlateCar(parkingSpotDto.getLicensePlateCar())){
